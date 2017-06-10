@@ -34,8 +34,8 @@ describe(Service.name, () => {
     const config = new Config({ environment })
     const service = new Service({ config, server })
 
-    it("defaults to /tmp/journaling-<Config.environment>.pid", () => {
-      expect(service.pidfile).to.eql(`/tmp/journaling-${environment}.pid`)
+    it("defaults to /tmp/create-service-app-<Config.environment>.pid", () => {
+      expect(service.pidfile).to.eql(`/tmp/create-service-app-${environment}.pid`)
     })
   })
 

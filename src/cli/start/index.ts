@@ -2,10 +2,10 @@ import { Loggable } from "../../logger"
 import { Serveable } from "../../service"
 import { CliCommand, CliOptions, defaults } from "../index"
 
-export const DESC = "Starts a journaling service in the background"
+export const DESC = "Starts a create-service-app service in the background"
 export const COMMAND = "start"
-export const SUCCESS = "Journaling service started."
-export const FAILURE = "Unable to start journaling service."
+export const SUCCESS = "create-service-app service started."
+export const FAILURE = "Unable to start create-service-app service."
 
 export default class Start {
   public service: Serveable

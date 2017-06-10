@@ -7,8 +7,8 @@ describe("Stop", () => {
     const logger = new SpyLogger()
     const service = new SpyService()
     const action = new Stop({ logger, service })
-    const failure = "Unable to stop journaling service."
-    const success = "Journaling service stopped."
+    const failure = "Unable to stop create-service-app service."
+    const success = "create-service-app service stopped."
 
     it("calls stop on the service", () => {
       return action

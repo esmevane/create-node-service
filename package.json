@@ -6,7 +6,9 @@
   "repository": "https://github.com/esmevane/create-node-service",
   "author": "Joseph McCormick",
   "scripts": {
-    "start": "yarn build && ./dist/index.js",
+    "start": "npm run build && ./bin/service start",
+    "stop": "./bin/service stop",
+    "serve": "npm run build && ./bin/service serve",
     "build": "tsc",
     "test": "mocha --opts mocha.opts",
     "lint": "tslint ./src/**/*.ts"

@@ -34,7 +34,7 @@ export default class Service implements Serveable {
 
   constructor(givenOptions: Partial<ServiceOptions> = {}) {
     const options = { ...defaults, ...givenOptions }
-   
+
     this.config = options.config
     this.kill = options.kill
     this.server = options.server
@@ -42,11 +42,11 @@ export default class Service implements Serveable {
   }
 
   get pidfile(): string {
-    return resolve("/tmp", `journaling-${this.config.environment}.pid`)
+    return resolve("/tmp", `create-service-app-${this.config.environment}.pid`)
   }
 
   async pid(): Promise<number | undefined> {
-    const contents = await read(this.pidfile, 'utf-8')
+    const contents = await read(this.pidfile, "utf-8")
     return parseInt(contents)
   }
 

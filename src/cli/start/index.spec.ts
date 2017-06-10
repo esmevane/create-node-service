@@ -7,8 +7,8 @@ describe("Start", () => {
     const logger = new SpyLogger()
     const service = new SpyService()
     const action = new Start({ logger, service })
-    const failure = "Unable to start journaling service."
-    const success = "Journaling service started."
+    const failure = "Unable to start create-service-app service."
+    const success = "create-service-app service started."
 
     it("calls start on the service", () => {
       return action

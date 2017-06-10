@@ -2,10 +2,10 @@ import { Loggable } from "../../logger"
 import { Serveable } from "../../service"
 import { CliAction, CliCommand, CliOptions, defaults } from "../index"
 
-export const DESC = "Stops a backgrounded journaling service"
+export const DESC = "Stops a backgrounded create-service-app service"
 export const COMMAND = "stop"
-export const SUCCESS = "Journaling service stopped."
-export const FAILURE = "Unable to stop journaling service."
+export const SUCCESS = "create-service-app service stopped."
+export const FAILURE = "Unable to stop create-service-app service."
 
 export default class Stop implements CliAction {
   public service: Serveable

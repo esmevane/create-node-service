@@ -7,7 +7,7 @@ describe("Pid", () => {
     const logger = new SpyLogger()
     const service = new SpyService()
     const action = new Pid({ logger, service })
-    const failure = "No journaling service found."
+    const failure = "No create-service-app service found."
 
     it("calls pid on the service", () => {
       return action

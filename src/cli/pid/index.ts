@@ -2,9 +2,9 @@ import { Loggable } from "../../logger"
 import { Serveable } from "../../service"
 import { CliAction, CliCommand, CliOptions, defaults } from "../index"
 
-export const DESC = "Reports a local journaling service PID, if any"
+export const DESC = "Reports a local create-service-app service PID, if any"
 export const COMMAND = "pid"
-export const FAILURE = "No journaling service found."
+export const FAILURE = "No create-service-app service found."
 
 export default class Pid implements CliAction {
   public service: Serveable

@@ -3,7 +3,7 @@ export default (asyncFunction: Function): Function =>
     new Promise((resolve, reject) =>
       asyncFunction(...params, (error: any, result: any): void => {
         if (error) reject(error)
-        
+
         resolve(result)
       })
     )

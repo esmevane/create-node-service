@@ -2,10 +2,10 @@ import { Loggable } from "../../logger"
 import { Serveable } from "../../service"
 import { CliAction, CliCommand, CliOptions, defaults } from "../index"
 
-export const DESC = "Starts a foregrounded journaling server"
+export const DESC = "Starts a foregrounded create-service-app server"
 export const COMMAND = "serve"
-export const SUCCESS = "Journaling service started."
-export const FAILURE = "Unable to start journaling service."
+export const SUCCESS = "create-service-app service started."
+export const FAILURE = "Unable to start create-service-app service."
 
 export default class Serve implements CliAction {
   public service: Serveable
