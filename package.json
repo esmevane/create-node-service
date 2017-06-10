@@ -4,6 +4,9 @@
   "description": "Create a node service",
   "main": "dist/index.js",
   "repository": "https://github.com/esmevane/create-node-service",
+  "bin":{
+    "service-control": "./bin/service-control"
+  },
   "author": "Joseph McCormick",
   "scripts": {
     "start": "npm run build && ./bin/service start",
